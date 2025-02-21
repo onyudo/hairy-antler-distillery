@@ -27,11 +27,11 @@ const insert = db.prepare(`
     VALUES (?, ?, ?, ?, ?, ?, ?)
 `);
 
-/*
-// Dummy data from working prototype - needs real data to insert here!
-// do an insert.run for each of the 5 products!
-insert.run('Martin', 'Otis', 52, 'hazel');
-insert.run('Jeremy', 'Otis', 54, 'blue');
-*/
+// Still needs links to bottle images and longer product descriptions for each product here!
+insert.run('link to image here', 'Sorghum Vodka', 'Our Kentucky original Sorghum Vodka', 'longer prodcut description goes here', 35.99, 750, true);
+insert.run('link to image here', 'Off Trail Gin', 'Kentucky foraged botanical Gin', 'longer prodcut description goes here', 35.99, 750, true);
+insert.run('link to image here', 'Demon Leaper Herbal Liqueur', 'Kentucky foraged botanical Herbal Liqueur, aged for 5 years', 'longer prodcut description goes here', 65.99, 450, true);
+insert.run('link to image here', '100% Rye Whiskey', 'Our 100% Kentucky Rye Whiskey, aged for 3 years', 'longer prodcut description goes here', 75.99, 750, true);
+insert.run('link to image here', 'Kentucky Straight Bourbon Whiskey', 'Our Kentucky Straight Bourbon Whiskey, aged for 7 years', 'longer prodcut description goes here', 85.99, 750, true);
 
 console.log('Sample data inserted!');

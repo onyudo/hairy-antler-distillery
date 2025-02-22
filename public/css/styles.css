@@ -19,7 +19,19 @@
 
 
 /* Homepage Styles */
-
+body.homepage {
+    background-image: url("../img/homepage_bg.jpg");
+    background-size: cover;
+    background-position: center center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	z-index: -1;
+}
 
 
 /* Products Page Styles */

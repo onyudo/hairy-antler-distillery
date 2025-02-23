@@ -101,6 +101,11 @@ footer p {
     color: #ffffff;
 }
 
+footer p a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
 
 /* Responsive Design */
 @media (width >= 500px) {

@@ -1,7 +1,30 @@
 @import url("./reset.css");
 
 /* Global Styles */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+    min-height: 100vh;
+}
 
+.main-header {
+    /*background-image: url("../img/homepage_bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;*/
+    background-color: #000000;
+    width: 100%;
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding: 20px;
+}
 
 
 /* Navigation Styles */
@@ -32,7 +55,6 @@ body.homepage {
     justify-content: space-between; 
     align-items: center;
     min-height: 100vh;
-    /*padding: 0 20px;*/
 }
 
 .landing-container {
@@ -70,6 +92,10 @@ nav.landing-menu a:hover {
     color: rgb(255, 255, 255);
 }
 
+.landing-footer {
+    background-color: transparent;
+}
+
 
 /* Products Page Styles */
 
@@ -91,7 +117,7 @@ nav.landing-menu a:hover {
 
 footer {
     margin-top: auto;
-    /*background-color: #5C5954;*/
+    background-color: #000000;
     width: 100%;
     padding: 5px 0;
     text-align: center;
@@ -121,6 +147,10 @@ footer p a:hover {
         align-items: center;
     }
 
+    .main-header {
+        max-width: 100%;
+    }
+
 }
 
 @media (width >= 768px) {
@@ -131,6 +161,10 @@ footer p a:hover {
 
     .landing-container img {
         width: 400px;
+    }
+
+    .main-header {
+        max-width: 100%;
     }
 
 }

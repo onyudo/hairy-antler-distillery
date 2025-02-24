@@ -37,9 +37,27 @@ body.woopsie {
     min-height: 100vh;
 }
 
+header.error-container {
+    width: 100%;
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding: 20px;
+}
+
+.error-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 h1.error {
     color: #ffffff;
-    padding-top: 40px;
+    padding-top: 2em;
     font-size: 4em;
 }
 
@@ -47,6 +65,8 @@ p.error {
     color: #ffffff;
     padding-top: 20px;
     text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* Homepage Styles */
@@ -127,7 +147,7 @@ footer {
     margin-top: auto;
     background-color: #000000;
     width: 100%;
-    padding: 5px 0 10px 5px;
+    padding: 5px 5px 10px 5px;
     text-align: center;
 }
 
@@ -159,6 +179,10 @@ footer p a:hover {
         max-width: 100%;
     }
 
+    .error-main {
+        max-width: 75%;
+    }
+
 }
 
 @media (width >= 768px) {
@@ -173,6 +197,10 @@ footer p a:hover {
 
     .main-header {
         max-width: 100%;
+    }
+
+    .error-main {
+        max-width: 50%;
     }
 
 }

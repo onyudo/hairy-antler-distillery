@@ -1,7 +1,7 @@
 {
   "name": "hairy-antler-distilery",
   "version": "1.0.0",
-  "description": "Hairy Antler Distillery is a fictional Kentucky Distillery which produces a Vodka, a Gin, an Herbal Liqueur as well as a line of Bourbons.",
+  "description": "Hairy Antler Distillery is a fictional Kentucky Distillery which produces a Vodka, a Gin, an Herbal Liqueur, a Rye as well as a line of Bourbons.",
   "main": "server.js",
   "scripts": {
     "dev": "node server.js",

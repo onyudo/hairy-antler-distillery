@@ -16,6 +16,8 @@ app.use("", express.static(path.join(__dirname, "./public")));
 
 // API code for retrieving single product goes here
 
+// Route for custom 404 error goes here?
+
 // Serves the whole app
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);

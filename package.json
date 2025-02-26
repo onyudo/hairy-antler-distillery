@@ -1,0 +1,17 @@
+{
+  "name": "hairy-antler-distilery",
+  "version": "1.0.0",
+  "description": "Hairy Antler Distillery is a fictional Kentucky Distillery which produces a Vodka, a Gin, an Herbal Liqueur as well as a line of Bourbons.",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Martin Otis",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

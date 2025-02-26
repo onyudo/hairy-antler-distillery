@@ -1,15 +1,20 @@
 "use strict";
 
 const express = require("express");
+const sqlite = require('better-sqlite3');
 const app = express();
 const path = require("path");
 const port = 1776;
 
+app.use(express.json());
+app.use(express.urlencoded({extended: false}));
+
+// API code for retrieving all products goes here
+
 // Serves the front-end content in the public directory
 app.use("", express.static(path.join(__dirname, "./public")));
 
-app.use(express.json());
-app.use(express.urlencoded({extended: false}));
+// API code for retrieving single product goes here
 
 // Serves the whole app
 app.listen(port, () => {

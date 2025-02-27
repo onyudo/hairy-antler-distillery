@@ -1,6 +1,7 @@
 "use strict";
 
 const express = require("express");
+const favicon = require('express-favicon');
 const sqlite = require('better-sqlite3');
 const app = express();
 const path = require("path");
@@ -8,6 +9,7 @@ const port = 1776;
 
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
 // API code for retrieving all products goes here
 

@@ -11,14 +11,16 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
-// API code for retrieving all products goes here
-
 // Serves the front-end content in the public directory
 app.use("", express.static(path.join(__dirname, "./public")));
+
+// API code for retrieving all products goes here
 
 // API code for retrieving single product goes here
 
 // Route for custom 404 error goes here?
+
+// checking to see if nodemon is working
 
 // Serves the whole app
 app.listen(port, () => {

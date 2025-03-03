@@ -29,8 +29,8 @@ if (!productId) {
             document.getElementById('product-details').innerHTML = "<p>Error loading product details</p>";
         });
 
-    // Set up the back button to navigate back to the products page
+    // Set up the button to navigate back to the products page
     document.getElementById('back-button').addEventListener('click', () => {
-        window.location.href = "products.html";  // Redirect to the products page
+        window.location.href = "products.html";
     });
 }

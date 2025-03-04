@@ -22,7 +22,7 @@ if (!productId) {
             document.getElementById('product-img').src = product.product_img;
             document.getElementById('product-img').alt = product.product_name;
             document.getElementById('product-description').textContent = product.product_description;
-            document.getElementById('product-price').textContent = product.product_price;
+            document.getElementById('product-price').textContent = '$' + product.product_price;
         })
         .catch(err => {
             console.error('Error fetching product:', err);

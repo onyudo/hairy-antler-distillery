@@ -23,7 +23,7 @@ fetch('http://localhost:1776/api/products')
                     <h2 class="product-name">${product.product_name}</h2><br>
                     <p class="product-blurb">${product.product_blurb}</p><br>
                     <p class="product-price">${product.product_price}<p><br>
-                    <a href="product.html?id=${product.product_id}">View More</a>
+                    <a href="product.html?id=$${product.product_id}">View More</a>
                 `;
                 productsList.appendChild(productDiv);
             });

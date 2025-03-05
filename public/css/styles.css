@@ -9,6 +9,32 @@ body {
     min-height: 100vh;
 }
 
+.cart {
+    position: fixed;
+    top: 10px;  /* Adjust as needed for some space from the top */
+    right: 10px; /* Adjust as needed for some space from the right */
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+.cart-icon {
+    width: 2em;
+}
+
+.cart a {
+    display: flex;
+    align-items: center;
+}
+
+.cart a:hover #cart-count {
+    color: #CE9C2B;
+}
+
+#cart-count {
+    color: #ffffff;
+    margin-left: 0.2em; /* Space between the icon and the cart count */
+    font-weight: bold;
+}
+
 .main-header {
     background-color: #000000;
     width: 100%;
@@ -96,16 +122,17 @@ body.homepage {
     flex: 1;
 }
 
-nav.landing-menu {
-    padding-top: 1em;
+.landing-menu ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Default is column layout for smaller screens */
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
     max-width: 100%;
     width: 100%;
 }
 
 nav.landing-menu li {
-    list-style: none;
     color: #ffffff;
     text-align: center;
     padding-top: 1em;
@@ -194,6 +221,15 @@ footer p a:hover {
         align-items: center;
     }
 
+    .landing-menu ul {
+        flex-direction: row;
+        justify-content: space-between; 
+    }
+
+    .landing-menu ul li {
+        padding: 10px;
+    }
+
     .main-header {
         max-width: 100%;
     }
@@ -222,6 +258,13 @@ footer p a:hover {
         max-width: 50%;
     }
 
-    
+    .landing-menu ul {
+        flex-direction: row; /* Ensure row layout for even larger screens */
+        justify-content: space-between; /* Add space between items */
+    }
+
+    .landing-menu ul li {
+        padding: 10px; /* Adds space inside each li */
+    }
 
 }

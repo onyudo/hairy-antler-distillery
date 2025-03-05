@@ -153,9 +153,7 @@ nav.landing-menu a:hover {
     background-color: transparent;
 }
 
-
 /* Products Page Styles */
-
 .all-products {
     display: flex;
     flex-direction: column;
@@ -182,18 +180,55 @@ nav.landing-menu a:hover {
 
 
 /* Cart Page Styles */
+.shopping-cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+.shopping-cart h1 {
+    text-align: center;
+}
 
+.cart-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart-item-img {
+    transform: scale(0.5);
+}
+
+h3.grand-total {
+    text-align: center;
+}
+
+.quantity-price {
+    display: flex;
+    flex-direction: row;
+}
+
+p.cart-quantity {
+    margin-right: 10px;
+}
+
+p.cart-price {
+    margin-left: 10px;
+}
 
 /* Checkout Page Styles */
-
 #error-message {
     color: #FF0000;
 }
 
+#checkout-form {
+    display: flex;
+    flex-direction: column;
+}
+
 
 /* Footer Styles */
-
 footer {
     margin-top: auto;
     background-color: #000000;
@@ -270,6 +305,16 @@ footer p a:hover {
 
     .landing-menu menu li {
         padding: 10px; /* Adds space inside each li */
+    }
+
+    #products-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .cart-item {
+        flex-direction: row;
     }
 
 }

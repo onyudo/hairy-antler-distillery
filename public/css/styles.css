@@ -158,6 +158,7 @@ nav.landing-menu a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 80%;
 }
 
 #products-list .product {
@@ -194,10 +195,11 @@ nav.landing-menu a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: fit-content;
 }
 
 .cart-item-img {
-    transform: scale(0.5);
+    width: 150px;
 }
 
 h3.grand-total {
@@ -299,22 +301,59 @@ footer p a:hover {
     }
 
     .landing-menu menu {
-        flex-direction: row; /* Ensure row layout for even larger screens */
-        justify-content: space-between; /* Add space between items */
+        flex-direction: row; 
+        justify-content: space-between; 
     }
 
     .landing-menu menu li {
-        padding: 10px; /* Adds space inside each li */
+        padding: 10px;
     }
 
     #products-list {
         display: flex;
-        flex-direction: row;
+        justify-content: space-between; /* Space out products evenly */
+        flex: 1; /* Makes the products list grow to take available space */
+    }
+    
+    #products-list .product {
+        flex: 1 1 calc(20% - 20px); /* Ensures 5 products in a row (100%/5 = 20%) */
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%; /* Ensures each product expands to fill the container */
+        box-sizing: border-box; /* Ensures padding doesn't affect overall width/height calculation */
+    }
+
+    #products-list .product img {
+        object-fit: cover; 
+        margin-bottom: 10px; 
+    }
+
+    #products-list .product h2,
+    #products-list .product .product-blurb {
+        text-align: center;
+        margin: 0; 
+        padding: 0;
+    }
+
+    #products-list .product .product-blurb {
+        padding-left: 1em;
+        padding-right: 1em;
+        flex-grow: 1;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
         align-items: center;
+        text-align: left;
     }
 
     .cart-item {
         flex-direction: row;
     }
+
+}
+
+@media (width >= 1392px) {
 
 }

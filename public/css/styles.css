@@ -153,7 +153,7 @@ nav.landing-menu a:hover {
     background-color: transparent;
 }
 
-/* Products Page Styles */
+/* Products/Spirits Page Styles */
 .all-products {
     display: flex;
     flex-direction: column;
@@ -171,7 +171,7 @@ nav.landing-menu a:hover {
     text-align: center;
 }
 
-.all-products p {
+.product-atts {
     padding-left: 1em;
     padding-right: 1em;
 }
@@ -309,10 +309,26 @@ footer p a:hover {
         padding: 10px;
     }
 
+    .cart-item {
+        flex-direction: row;
+    }
+
+    #products-list .product {
+        flex-direction: row;
+    }
+
+    h2.product-name {
+        text-align: left;
+    }
+
+}
+
+@media (width >= 1392px) {
+
     #products-list {
         display: flex;
-        justify-content: space-between; /* Space out products evenly */
-        flex: 1; /* Makes the products list grow to take available space */
+        justify-content: space-between; 
+        flex: 1; 
     }
     
     #products-list .product {
@@ -321,7 +337,7 @@ footer p a:hover {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 100%; /* Ensures each product expands to fill the container */
+        height: 100%; 
         box-sizing: border-box; /* Ensures padding doesn't affect overall width/height calculation */
     }
 
@@ -330,16 +346,19 @@ footer p a:hover {
         margin-bottom: 10px; 
     }
 
+    .product-atts{
+        display: flex;
+        flex-direction: column;
+    }
+
     #products-list .product h2,
     #products-list .product .product-blurb {
-        text-align: center;
+        text-align: left;
         margin: 0; 
         padding: 0;
     }
 
     #products-list .product .product-blurb {
-        padding-left: 1em;
-        padding-right: 1em;
         flex-grow: 1;
         margin-top: 10px;
         display: flex;
@@ -348,12 +367,9 @@ footer p a:hover {
         text-align: left;
     }
 
-    .cart-item {
-        flex-direction: row;
+    p.product-price {
+        padding-left: 0;
+        padding-right: 0;
     }
-
-}
-
-@media (width >= 1392px) {
 
 }

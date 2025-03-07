@@ -248,10 +248,6 @@ footer p a:hover {
     color: #CE9C2B;
 }
 
-test {
-    color:#000000;
-}
-
 /* Responsive Design */
 @media (width >= 500px) {
 

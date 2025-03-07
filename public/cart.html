@@ -13,13 +13,24 @@
             <img src="./img/hairy-antler-logo.png" alt="Hairy Antler Distillery Logo">
         </a>
         <nav class="landing-menu">
-            <li><a href="./products.html">Spirits</a></li>
-            <li><a href="./about.html">Our Story</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+            <menu>
+                <li><a href="./spirits.html">Spirits</a></li>
+                <li><a href="./our-story.html">Our Story</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </menu>
         </nav>
     </header>
-    <main></main>
-    <footer><p>&copy;2025 Hairy Antler Distillery. All Rights Reserved. Unless otherwise noted, all photographs included herein are the property of <a href="https://forceandform.com" target="_blank">Force & Form LLC</a>.</p></footer>
-    <script src="./js/index.js"></script>
+    <main class="shopping-cart">
+        <h1>Your Cart</h1>
+        <div id="cart-items"></div>
+        <div id="cart-summary">
+            <div>
+                <h3 class="grand-total">Grand Total: $<span id="cart-total">0.00</span></h2>
+            </div>
+        </div>
+        <button id="checkout-button">Proceed to Checkout</button>
+    </main>
+    <footer><p>&copy;<script>document.write(new Date().getFullYear())</script> Hairy Antler Distillery. All Rights Reserved. Unless otherwise noted, all photographs included herein are the property of <a href="https://forceandform.com" target="_blank">Force & Form LLC</a>.</p></footer>
+    <script src="./js/cart.js"></script>
 </body>
 </html>

@@ -172,11 +172,34 @@ nav.landing-menu a:hover {
 }
 
 .product-atts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-left: 1em;
     padding-right: 1em;
 }
+p.product-price {
+    text-align: center;
+}
 
 /* Single Product Page Styles */
+.single-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+
+.single-product #product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.single-product h1, h2 {
+    text-align: center;
+}
 
 
 
@@ -337,7 +360,7 @@ footer p a:hover {
         flex-direction: column;
         justify-content: space-between;
         height: 100%; 
-        box-sizing: border-box; /* Ensures padding doesn't affect overall width/height calculation */
+        box-sizing: border-box;
     }
 
     #products-list .product img {

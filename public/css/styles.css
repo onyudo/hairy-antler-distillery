@@ -343,6 +343,10 @@ footer p a:hover {
         text-align: left;
     }
 
+    .single-product #product-details {
+        flex-direction: row;
+    }
+
 }
 
 @media (width >= 1392px) {
@@ -392,6 +396,10 @@ footer p a:hover {
     p.product-price {
         padding-left: 0;
         padding-right: 0;
+    }
+
+    .single-product {
+        width: 50%;
     }
 
 }

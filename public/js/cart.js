@@ -5,12 +5,16 @@ function loadCart() {
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
     const cartItemsContainer = document.getElementById('cart-items');
     const cartTotalElement = document.getElementById('cart-total');
+    const checkoutButton = document.getElementById('checkout-button');
+    const productsLink = document.getElementById('products-link'); // Link to all products
     
     let grandTotal = 0;
 
     if (cart.length === 0) {
         cartItemsContainer.innerHTML = "<p>Your cart is empty</p>";
         cartTotalElement.textContent = '0.00'; // Display $0.00 if no items
+        checkoutButton.style.display = 'none'; // Hide checkout button
+        productsLink.style.display = 'block'; // Show link to all products page
     } else {
         cartItemsContainer.innerHTML = ''; // Clear previous content
 
@@ -39,6 +43,8 @@ function loadCart() {
 
         // Update the grand total displayed at the bottom
         cartTotalElement.textContent = grandTotal.toFixed(2); // Display the total with 2 decimal points
+        checkoutButton.style.display = 'block'; // Show checkout button
+        productsLink.style.display = 'none'; // Hide link to all products page
     }
 
     // Add event listeners for increment, decrement, and delete

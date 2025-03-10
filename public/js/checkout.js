@@ -22,6 +22,9 @@ const expDateRegex = /^(0[1-9]|1[0-2])\/([0-9]{2})$/;
 // Regular expression for validating CVC (3 digits)
 const cvcRegex = /^[0-9]{3}$/;
 
+// Regular expression for validating email format
+const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+
 // Function to load the cart from localStorage and display the order total
 function loadCart() {
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -57,35 +60,42 @@ document.getElementById('checkout-form').addEventListener('submit', function(eve
     const errorMessage = document.getElementById('error-message');
     errorMessage.textContent = '';
 
-    // 1. Validate State
+    // 1. Validate Email
+    const email = document.getElementById('email').value;
+    if (!emailRegex.test(email)) {
+        errorMessage.textContent = "Please enter a valid email address.";
+        return;
+    }
+
+    // 2. Validate State
     const state = document.getElementById('state').value;
     if (!validStates.test(state)) {
         errorMessage.textContent = "Our apologies, we cannot ship spirits to your state of residence.";
         return;
     }
 
-    // 2. Validate Credit Card Number
+    // 3. Validate Credit Card Number
     const creditCard = document.getElementById('payment').value;
     if (!cardRegex.test(creditCard)) {
         errorMessage.textContent = "Please enter a valid credit card number.";
         return;
     }
 
-    // 3. Validate Expiration Date
+    // 4. Validate Expiration Date
     const expDate = document.getElementById('exp-date').value;
     if (!expDateRegex.test(expDate)) {
         errorMessage.textContent = "Please enter a valid expiration date in MM/YY format.";
         return;
     }
 
-    // 4. Validate CVC
+    // 5. Validate CVC
     const cvc = document.getElementById('cvc').value;
     if (!cvcRegex.test(cvc)) {
         errorMessage.textContent = "Please enter a valid CVC (3 digits).";
         return;
     }
 
-    // 5. Validate Age Verification Checkbox
+    // 6. Validate Age Verification Checkbox
     const ageVerified = document.getElementById('age-verification').checked;
     if (!ageVerified) {
         errorMessage.textContent = "You must be 21 years of age or older to order our spirits.";
@@ -98,7 +108,7 @@ document.getElementById('checkout-form').addEventListener('submit', function(eve
     const payment = document.getElementById('payment').value;
 
     // Simulate order submission
-    console.log('Order placed:', { name, address, payment, cart });
+    console.log('Order placed:', { name, address, email, payment, cart });
 
     // Clear cart after order
     localStorage.removeItem('cart');

@@ -13,6 +13,9 @@ function updateCartCount() {
 // Regular expression to check if the state is valid - only certain states are allowed!
 const validStates = /^(AK|AZ|CT|HI|KY|NE|NV|NH|ND|RI)$/;
 
+// Regular expression for validating zip code entry (5 digits)
+const zipRegex = /^[0-9]{5}$/;
+
 // Regular expression for validating a credit card number - Luhn algorithm but for Visa cards only!
 const cardRegex = /^4[0-9]{12}(?:[0-9]{3})?$/; // This is for Visa only, a valid number would be: 4111111111111111
 
@@ -52,7 +55,7 @@ document.getElementById('checkout-form').addEventListener('submit', function(eve
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
     
     if (cart.length === 0) {
-        alert('Your cart is empty. Please visit our <a href="spirits.html">spirits page</a> and add some to the cart.');
+        alert('Your cart is empty. Please visit <a href="spirits.html">Spirits</a> and add some to the cart.');
         return;
     }
 
@@ -74,35 +77,42 @@ document.getElementById('checkout-form').addEventListener('submit', function(eve
         return;
     }
 
-    // 3. Validate Credit Card Number
+    // 3. Validate Zip Code
+    const zipCode = document.getElementById('zip-code').value;
+    if (!zipRegex.test(zipCode)) {
+        errorMessage.textContent = "Please enter a valid zip code (5 digits).";
+        return;
+    }
+
+    // 4. Validate Credit Card Number
     const creditCard = document.getElementById('payment').value;
     if (!cardRegex.test(creditCard)) {
         errorMessage.textContent = "Please enter a valid credit card number.";
         return;
     }
 
-    // 4. Validate Expiration Date
+    // 5. Validate Expiration Date
     const expDate = document.getElementById('exp-date').value;
     if (!expDateRegex.test(expDate)) {
         errorMessage.textContent = "Please enter a valid expiration date in MM/YY format.";
         return;
     }
 
-    // 5. Validate CVC
+    // 6. Validate CVC
     const cvc = document.getElementById('cvc').value;
     if (!cvcRegex.test(cvc)) {
         errorMessage.textContent = "Please enter a valid CVC (3 digits).";
         return;
     }
 
-    // 6. Validate Age Verification Checkbox
+    // 7. Validate Age Verification Checkbox
     const ageVerified = document.getElementById('age-verification').checked;
     if (!ageVerified) {
         errorMessage.textContent = "You must be 21 years of age or older to order our spirits.";
         return;
     }
 
-    // If all fields pass validation, proceed with the form submission (you can process the data here)
+    // If all fields pass validation, proceed with the form submission
     const name = document.getElementById('name').value;
     const address = document.getElementById('address').value;
     const payment = document.getElementById('payment').value;

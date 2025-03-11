@@ -243,6 +243,8 @@ p.cart-price {
 /* Checkout Page Styles */
 h1.checkout {
     text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 #error-message {
@@ -257,7 +259,8 @@ h1.checkout {
     padding-bottom: 1em;
 }
 
-input, select {
+input:not([type="checkbox"]), select {
+    width: 100%;
     outline: 2px solid #5C5954;
 }
 
@@ -280,6 +283,12 @@ input.error, select.error {
 .cvc-container  {
     display: flex;
     flex-direction: column;
+    padding-bottom: 1em;
+}
+
+.age-verification {
+    text-align: center;
+    padding-top: 1em;
     padding-bottom: 1em;
 }
 
@@ -356,6 +365,10 @@ footer p a:hover {
         justify-content: space-between;
     }
 
+    input:not([type="checkbox"]), select {
+        width: 50%;
+    }
+
 }
 
 @media (width >= 768px) {
@@ -399,6 +412,10 @@ footer p a:hover {
 
     .single-product #product-details {
         flex-direction: row;
+    }
+
+    .checkout-form {
+        width: 50%;
     }
 
 }
@@ -454,6 +471,10 @@ footer p a:hover {
 
     .single-product {
         width: 50%;
+    }
+
+    .checkout-form {
+        width: 30%;
     }
 
 }

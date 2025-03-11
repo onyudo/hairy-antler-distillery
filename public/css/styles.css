@@ -189,6 +189,16 @@ p.product-price {
     flex-direction: column;
     justify-content: center;
     width: 80%;
+    padding-bottom: 2em;
+}
+
+h1#product-name {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#product-img {
+    padding-bottom: 2em;
 }
 
 .single-product #product-details {

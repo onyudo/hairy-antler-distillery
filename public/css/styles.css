@@ -241,6 +241,10 @@ p.cart-price {
 }
 
 /* Checkout Page Styles */
+h1.checkout {
+    text-align: center;
+}
+
 #error-message {
     color: #FF0000;
     text-align: center;
@@ -249,13 +253,42 @@ p.cart-price {
 #checkout-form {
     display: flex;
     flex-direction: column;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
-.name-container, .address-container {
+input, select {
+    outline: 2px solid #5C5954;
+}
+
+input:focus, select:focus {
+    outline: 2px solid #CE9C2B;
+}
+
+input.error, select.error {
+    outline: 2px solid #FF0000;
+}
+
+.name-container, 
+.address-container,
+.city-container,
+.state-container,
+.zip-container,
+.email-container,
+.credit-card-container,
+.exp-container,
+.cvc-container  {
     display: flex;
     flex-direction: column;
+    padding-bottom: 1em;
 }
 
+.checkout-total {
+    font-weight: bold;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
 
 /* Footer Styles */
 footer {
@@ -310,7 +343,15 @@ footer p a:hover {
         width: 80%;
     }
 
-    .name-container, .address-container {
+    .name-container, 
+    .address-container,
+    .city-container,
+    .state-container,
+    .zip-container,
+    .email-container,
+    .credit-card-container,
+    .exp-container,
+    .cvc-container  {
         flex-direction: row;
         justify-content: space-between;
     }

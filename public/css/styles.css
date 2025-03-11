@@ -201,8 +201,6 @@ p.product-price {
     text-align: center;
 }
 
-
-
 /* Cart Page Styles */
 .shopping-cart {
     display: flex;
@@ -245,9 +243,15 @@ p.cart-price {
 /* Checkout Page Styles */
 #error-message {
     color: #FF0000;
+    text-align: center;
 }
 
 #checkout-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-container, .address-container {
     display: flex;
     flex-direction: column;
 }
@@ -300,6 +304,15 @@ footer p a:hover {
 
     .error-main {
         max-width: 75%;
+    }
+
+    .checkout-form {
+        width: 80%;
+    }
+
+    .name-container, .address-container {
+        flex-direction: row;
+        justify-content: space-between;
     }
 
 }

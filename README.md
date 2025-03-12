@@ -60,6 +60,10 @@ npm run dev
 Ctrl+C
 ```
 
+## Technologies Used
+
+The tools, technologies and frameworks used for this project are as follows: VS Code, Firefox Developers Edition browser, Git, GitHub, Node.js, NPM, Nodemon, Express.js, CORS, Better-SQLite3 and Postman.
+
 ## Project Features
 
 Hairy Antler Distillery meets the recommended requirements for a Code:You capstone project. Below you will find a detailed list on what requirements have been met from the Project Requirements document, as well as how it meets said requirements.

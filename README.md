@@ -10,7 +10,7 @@ To enhance functionality, the project utilizes two custom REST APIs to handle dy
 
 ## SQL Database
 
-A key aspect of the project is the use of a custom Better-SQLite3 database to store and manage product information and attributes. The database efficiently handles details such as product names, descriptions, prices, descriptions, and other relevant attributes.
+A key aspect of the project is the use of a custom Better-SQLite3 database to store and manage product information and attributes. The database efficiently handles details such as product names, prices, descriptions, and other relevant attributes.
 
 ## API Information
 

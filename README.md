@@ -54,6 +54,32 @@ npm run dev
 
 6. Open the browser of your choice and navigate to [localhost:1776](http://localhost:1776/), the landing page for Hairy Antler Distillery will load.
 
+7. To stop the project from running:
+
+```bash
+Ctrl+C
+```
 
 ## Project Features
 
+Hairy Antler Distillery meets the recommended requirements for a Code:You capstone project. Below you will find a detailed list on what requirements have been met from the Project Requirements document, as well as how it meets said requirements.
+
+#### Use arrays, object, sets, or maps to store and retrieve information that is displayed in your app.
+
+- The project uses arrays and objects to store and manage data. Arrays are used to hold the list of products fetched from the APIs and the items in the shopping cart, with each cart item represented as an object containing product details like ID, name, price, and quantity. Objects are employed to structure individual product information and to store data about each product in the cart.
+
+#### Analyze data that is stored in arrays, objects, sets or maps and display information about it in your app.
+
+-The project analyzes data stored in arrays and objects and displays information in the app. Specifically, it retrieves product data stored in an array (from an API response), processes each product (represented as an object), and dynamically generates HTML elements to display product details on the page. Additionally, when a product is added to the shopping cart, it is stored in an array (in local storage) and updated with the product's details, which are also objects.
+
+#### Use a regular expression to validate user input and either prevent the invalid input or inform the user about it (in all cases prevent invalid input from being stored or saved).
+
+-Regular expressions (regex) are used to validate various user inputs during the checkout process, ensuring that the data entered is in the correct format before being processed. The regex checks if the email, state, zip code, credit card number, expiration date, CVC, and age verification meet specific patterns. If any input fails validation, an error message is displayed, preventing the form submission and ensuring invalid data is not stored or saved.
+
+#### Create a node.js web server using a modern framework such as Express.js or Fastify.  Serve at least one route that your app uses (must serve more than just the index.html file).
+
+-This project uses up a node.js web server using the Express.js framework. One of the key features of this server is the API route /api/products, which retrieves all products from a SQLite database. The server uses the better-sqlite3 library to interact with the database and respond with product data in JSON format. Another route, /api/products/:id, allows users to fetch information about a specific product by its ID. These API endpoints serve data to the front-end, allowing dynamic content to be displayed on the website. Additionally, the server handles errors, serving a custom 404 page when an unknown route is accessed. This approach ensures that the app can handle both static content and dynamic data requests effectively.
+
+#### Interact with a database to store and retrieve information (e.g. MySQL, MongoDB, etc).
+
+-The project uses the better-sqlite3 library to interact with an SQLite database called products.db. It stores information about various products, including details like product images, names, descriptions, prices, stock quantities, and their active status.The products can later be retrieved using SQL SELECT queries, typically for displaying the data through API routes in my application.

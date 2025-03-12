@@ -10,13 +10,13 @@ function updateCartCount() {
     }
 }
 
-// Regular expression to check if the state is valid - only certain states are allowed!
+// Regular expression to check if the state is valid - only certain states are allowed to ship spirits to!
 const validStates = /^(AK|AZ|CT|HI|KY|NE|NV|NH|ND|RI)$/;
 
 // Regular expression for validating zip code entry (5 digits)
 const zipRegex = /^[0-9]{5}$/;
 
-// Regular expression for validating a credit card number - Luhn algorithm but for Visa cards only!
+// Regular expression for validating a credit card number
 const cardRegex = /^4[0-9]{12}(?:[0-9]{3})?$/; // This is for Visa only, a valid number would be: 4111111111111111
 
 // Regular expression for validating expiration date (MM/YY format)

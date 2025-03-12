@@ -1,5 +1,9 @@
 # Hairy Antler Distillery
 
+## Deepscan Status
+
+[![DeepScan grade](https://deepscan.io/api/teams/26378/projects/29024/branches/935190/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=26378&pid=29024&bid=935190)
+
 ## Overview
 
 Hairy Antler Distillery is a fictional Kentucky Distillery which produces a Vodka, a Gin, an Herbal Liqueur, a Rye Whiskey as well as a line of Bourbons.

@@ -86,4 +86,4 @@ Hairy Antler Distillery meets the recommended requirements for a Code:You capsto
 
 #### Interact with a database to store and retrieve information (e.g. MySQL, MongoDB, etc).
 
-- The project uses the better-sqlite3 library to interact with an SQLite database called products.db. It stores information about various products, including details like product image paths, names, descriptions, prices, stock quantities, and their active status. The products can later be retrieved using SQL SELECT queries, typically for displaying the data through API routes in my application.
+- This project uses the better-sqlite3 library to interact with an SQLite database called products.db. It stores information about various products, including details like product image paths, names, descriptions, prices, stock quantities, and their active status. The products can later be retrieved using SQL SELECT queries, typically for displaying the data through API routes in my application.

@@ -22,6 +22,7 @@ if (productsList) {
                     productDiv.innerHTML = `
                         <img src="${product.product_img}" alt="Hairy Antler Distillery's ${product.product_name}"><br>
                         <div class="product-atts">
+                        <h2 class="product-name">${product.product_descriptor}</h2><br>
                         <h2 class="product-name">${product.product_name}</h2><br>
                         <p class="product-blurb">${product.product_blurb}</p><br>
                         <p class="product-price">$${product.product_price}</p><br>

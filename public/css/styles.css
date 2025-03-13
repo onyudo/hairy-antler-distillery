@@ -9,6 +9,31 @@ body {
     min-height: 100vh;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: bourbon, serif;
+    font-weight: normal;
+}
+
+button {
+    background-color: #CE9C2B;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: white;
+    color: #CE9C2B;
+    border: 1px solid #CE9C2B;
+}
+
 .cart {
     float: right;
     padding-top: 1em;
@@ -167,15 +192,27 @@ nav.landing-menu a:hover {
     align-items: center;
 }
 
-.all-products h1, h2 {
+.all-products h1 {
     text-align: center;
+    padding-top: 1em;
+}
+
+h2.product-descriptor {
+    font-size: 1.25em;
+    letter-spacing: 1.25px;
+    padding-top: 1em;
+}
+
+h2.product-name {
+    font-size: 1.75em;
+    letter-spacing: 1.25px;
+    padding-top: 1em;
 }
 
 .product-atts {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     padding-left: 1em;
     padding-right: 1em;
 }
@@ -262,6 +299,10 @@ h1.checkout {
     text-align: center;
 }
 
+main.checkout-form {
+    width: 80%;
+}
+
 #checkout-form {
     display: flex;
     flex-direction: column;
@@ -270,7 +311,8 @@ h1.checkout {
 }
 
 #checkout-form label {
-    font-weight: bold;
+    font-family: bourbon, serif;
+    font-size: 1.5em;
 }
 
 input:not([type="checkbox"]), select {
@@ -472,10 +514,10 @@ footer p a:hover {
     #products-list .product .product-blurb {
         flex-grow: 1;
         margin-top: 10px;
-        display: flex;
         justify-content: center;
         align-items: center;
         text-align: left;
+        height: 200px;
     }
 
     p.product-price {
@@ -487,8 +529,8 @@ footer p a:hover {
         width: 50%;
     }
 
-    .checkout-form {
-        width: 30%;
+    main.checkout-form {
+        width: 40%;
     }
 
 }

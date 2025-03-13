@@ -50,7 +50,7 @@ code .
 npm i
 ```
 
-5. Once the packages are installed you can get it up and running using:
+5. Once the packages are installed you can get the project up and running using:
    
 ```bash
 npm run dev

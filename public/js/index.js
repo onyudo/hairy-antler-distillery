@@ -24,8 +24,7 @@ if (productsList) {
                         <div class="product-atts">
                         <h2 class="product-descriptor">${product.product_descriptor}</h2>
                         <h2 class="product-name">${product.product_name}</h2>
-                        <p class="product-blurb">${product.product_blurb}</p>
-                        <a href="spirit.html?id=${product.product_id}">View More</a>
+                        <p class="product-blurb">${product.product_blurb}<br><a href="spirit.html?id=${product.product_id}" class="view-more">View More »</a></p>
                         <p class="product-price">$${product.product_price}</p>
                         <button class="add-to-cart" data-id="${product.product_id}" data-name="${product.product_name}" data-price="${product.product_price}" data-img="${product.product_img}">Add to Cart</button>
                         </div>

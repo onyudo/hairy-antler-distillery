@@ -11,6 +11,11 @@ if (!productId) {
     // Fetch the product data using the product ID
     fetch(`http://localhost:1776/api/products/${productId}`)
         .then(response => {
+            if (response.status === 404) {
+                // If the product is not found, navigate to the custom 404 error page
+                window.location.href = '/404.html'; // Redirect to the custom 404 page
+                return; 
+            }
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }

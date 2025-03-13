@@ -28,7 +28,7 @@ function loadCart() {
                 <img src="${item.img}" alt="${item.name}" class="cart-item-img">
                 <div class="cart-item-details">
                 <h3>${item.name}</h3>
-                <button class="delete" data-index="${index}">Remove</button>
+                <button class="delete" data-index="${index}">&#x1F5D1</button>
                 <div class="quantity-price">
                 <p class="cart-quantity">Quantity: <button class="decrement" data-index="${index}">-</button> 
                 <span class="quantity">${item.quantity}</span> 

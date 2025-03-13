@@ -269,6 +269,10 @@ h1.checkout {
     padding-bottom: 1em;
 }
 
+#checkout-form label {
+    font-weight: bold;
+}
+
 input:not([type="checkbox"]), select {
     width: 100%;
     outline: 2px solid #5C5954;

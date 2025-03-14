@@ -42,7 +42,7 @@ console.log('Product updated!');
 
 // To add a new column of information to the existinng table in the products.db SQLite database
 
-// Example: Add the a 'product_slug' column
+// Example: Add a 'product_slug' column
 db.prepare(`
     ALTER TABLE products
     ADD COLUMN product_slug TEXT;

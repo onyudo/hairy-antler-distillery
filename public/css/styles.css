@@ -299,15 +299,12 @@ p.cart-price {
 }
 
 button.delete {
-    font-size: 1em;
-    line-height: 1;
-    width: 40px; 
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: transparent;
+}
+
+.delete svg {
+    fill: #CE9C2B;
+    transition: border 0.3s ease;
 }
 
 button.delete:hover {

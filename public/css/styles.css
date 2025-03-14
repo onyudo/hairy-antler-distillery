@@ -47,13 +47,17 @@ button:hover {
     z-index: 1000;
 }
 
-.cart-icon {
-    width: 2em;
-}
-
 .cart a {
     display: flex;
     align-items: center;
+}
+
+.cart svg {
+    fill: #ffffff;
+}
+
+.cart svg:hover {
+    fill: #CE9C2B;
 }
 
 .cart a:hover #cart-count {

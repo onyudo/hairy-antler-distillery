@@ -1,5 +1,7 @@
 "use strict";
 
+// This file should not be run as is and is for reference only!
+
 // INSERT INTO for creating a new product in the products.db SQLite databse
 
 //Prep the insert statement

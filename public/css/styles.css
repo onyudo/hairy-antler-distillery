@@ -295,17 +295,9 @@ h3.grand-total {
     flex-direction: row;
 }
 
-p.cart-quantity {
-    margin-right: 10px;
-}
-
 .cart-quantity span.quantity {
     padding-left: 1em;
     padding-right: 1em;
-}
-
-p.cart-price {
-    margin-left: 10px;
 }
 
 button.delete {
@@ -476,6 +468,16 @@ footer p a:hover {
 
     .quantity-price {
         align-items: center;
+    }
+
+    .cart-quantity span.quantity {
+        padding-left: .5em;
+        padding-right: .5em;
+    }
+
+    .cart-price {
+        padding-left: .5em;
+        padding-right: .5em;
     }
 
 }

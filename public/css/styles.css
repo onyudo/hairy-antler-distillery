@@ -52,20 +52,17 @@ button:hover {
     align-items: center;
 }
 
-.cart svg {
-    fill: #ffffff;
+.cart-icon svg,
+.cart-icon #cart-count {
+        color: #ffffff;
 }
 
-.cart svg:hover {
-    fill: #CE9C2B;
-}
-
-.cart a:hover #cart-count {
-    color: #CE9C2B;
+.cart-icon:hover svg,
+.cart-icon:hover #cart-count {
+        color: #CE9C2B;;
 }
 
 #cart-count {
-    color: #ffffff;
     margin-left: 0.2em; /* Space between the icon and the cart count */
     font-weight: bold;
 }

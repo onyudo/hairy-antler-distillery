@@ -39,3 +39,29 @@ const update =db.prepare(`
 update.run('Updated Product Name', 49.99, 1);
 
 console.log('Product updated!');
+
+// To add a new column of information to the existinng table in the products.db SQLite database
+
+// Example: Add the a 'product_slug' column
+db.prepare(`
+    ALTER TABLE products
+    ADD COLUMN product_slug TEXT;
+`).run();
+
+console.log('New column "product_slug" added!');
+
+// Example: Prepare the update query to manually set the slugs
+const updateSlug = db.prepare(`
+    UPDATE products
+    SET product_slug = ?
+    WHERE product_id = ?;
+`);
+
+// Example: Update the slugs for each product
+updateSlug.run('sorghum-vodka', 1);
+updateSlug.run('off-trail-gin', 2);
+updateSlug.run('demon-leaper', 3);
+updateSlug.run('rye-whiskey', 4);
+updateSlug.run('bourbon-whiskey', 5);
+
+console.log('Product slugs added!');

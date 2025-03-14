@@ -40,7 +40,7 @@ update.run('Updated Product Name', 49.99, 1);
 
 console.log('Product updated!');
 
-// To add a new column of information to the existinng table in the products.db SQLite database
+// To add a new column of information to the existing table in the products.db SQLite database
 
 // Example: Add a 'product_slug' column
 db.prepare(`

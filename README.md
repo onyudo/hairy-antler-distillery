@@ -66,7 +66,7 @@ Ctrl+C
 
 ## Technologies Used
 
-The tools, technologies and frameworks used for this project are as follows: VS Code, Firefox Developers Edition browser, Git, GitHub, Node.js, NPM, Nodemon, Express.js, CORS, Better-SQLite3 and Postman.
+The tools, technologies and frameworks used for this project are as follows: VS Code, Firefox Developers Edition browser, Git, GitHub, Node.js, NPM, Nodemon, Express.js, CORS, Better-SQLite3, Adobe Web Fonts and Postman.
 
 ## Project Features
 

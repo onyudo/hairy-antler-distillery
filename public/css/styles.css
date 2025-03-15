@@ -555,6 +555,11 @@ footer p a:hover {
         width: 100px;
     }
 
+    button.place-order {
+        width: 50%;
+        align-self: center;
+    }
+
 }
 
 @media (width >= 1392px) {

@@ -225,7 +225,7 @@ p.product-price {
     text-align: center;
 }
 
-/* Single Product Page Styles */
+/* Single Product / Single Spirit Page Styles */
 .single-product {
     display: flex;
     flex-direction: column;
@@ -283,7 +283,9 @@ h2#product-descriptor {
 }
 
 .cart-item-details h3 {
+    font-size: 1.5em;
     padding-bottom: 1em;
+    padding-top: 1em;
 }
 
 h3.grand-total {
@@ -292,28 +294,29 @@ h3.grand-total {
 
 .quantity-price {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .cart-quantity span.quantity {
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 
-button.delete {
-    background-color: #CE9C2B;
-    border: 1px solid transparent;
-    color: #ffffff;
+.cart-price {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
 
-button.delete:hover {
+button.delete, button.increment, button.decrement {
     background-color: #ffffff;
     border: 1px solid #CE9C2B;
-    color: #CE9C2B; 
+    color: #CE9C2B;
 }
 
-button.delete:hover .delete svg {
-    fill: #CE9C2B; 
+button.delete:hover, button.increment:hover, button.decrement:hover {
+    background-color: #CE9C2B;
+    border: none;
+    color: #ffffff; 
 }
 
 .cart-subtotal {
@@ -466,7 +469,16 @@ footer p a:hover {
         width: 50%;
     }
 
+    main.shopping-cart {
+        width: 90%;
+    }
+
+    .cart-item-details h3 {
+        padding-bottom: 0.5em;
+    }
+
     .quantity-price {
+        flex-direction: row;
         align-items: center;
     }
 
@@ -602,13 +614,13 @@ footer p a:hover {
         width: 40%;
     }
 
-    .shopping-cart {
-        width: 50%;
+    main.shopping-cart {
+        width: 60%;
         justify-content: center;
     }
 
     #checkout-button {
-        width: 50%;
+        width: 30%;
         align-self: center;
     }
 

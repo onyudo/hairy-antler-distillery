@@ -465,6 +465,11 @@ footer p a:hover {
         justify-content: space-between;
     }
 
+    button#checkout-button {
+        width: 50%;
+        align-self: center;
+    }
+
     input:not([type="checkbox"]), select {
         width: 50%;
     }
@@ -542,7 +547,7 @@ footer p a:hover {
     }
 
     #checkout-button {
-        width: 50%;
+        width: 30%;
         align-self: center;
     }
 
@@ -632,6 +637,11 @@ footer p a:hover {
     .cart-price {
         padding-right: 3em;
         padding-left: 3em;
+    }
+
+    button#checkout-button {
+        width: 30%;
+        align-self: center;
     }
 
 }

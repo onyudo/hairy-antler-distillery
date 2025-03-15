@@ -307,10 +307,18 @@ h3.grand-total {
     padding-bottom: 0.5em;
 }
 
+.cart-price-delete {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 0.5em;
+}
+
 button.delete, button.increment, button.decrement {
     background-color: #ffffff;
     border: 1px solid #CE9C2B;
     color: #CE9C2B;
+    width: 76px;
 }
 
 button.delete:hover, button.increment:hover, button.decrement:hover {
@@ -327,7 +335,6 @@ button.delete:hover, button.increment:hover, button.decrement:hover {
     padding-top: 2em;
     padding-bottom: 1em;
 }
-
 
 /* Checkout Page Styles */
 h1.checkout {

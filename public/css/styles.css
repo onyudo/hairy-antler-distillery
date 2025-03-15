@@ -189,12 +189,14 @@ nav.landing-menu a:hover {
     flex-direction: column;
     justify-content: center;
     width: 80%;
+    padding-bottom: 3em;
 }
 
 #products-list .product {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 2em;
 }
 
 .all-products h1 {
@@ -211,7 +213,6 @@ h2.product-descriptor {
 h2.product-name {
     font-size: 1.75em;
     letter-spacing: 1.25px;
-    padding-top: 1em;
 }
 
 .product-atts {
@@ -221,8 +222,16 @@ h2.product-name {
     padding-left: 1em;
     padding-right: 1em;
 }
+
+a.view-more:hover {
+    color: #CE9C2B;
+    text-decoration: underline;
+}
+
 p.product-price {
-    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: left;
 }
 
 /* Single Product / Single Spirit Page Styles */
@@ -242,6 +251,8 @@ p.product-price {
 h1#product-name {
     font-size: 3em;
     letter-spacing: 1.25px;
+    line-height: 1;
+    padding-bottom: 0.25em;
 }
 
 h2#product-descriptor {
@@ -249,10 +260,27 @@ h2#product-descriptor {
     letter-spacing: 1.25px;
 }
 
+.single-product #product-description {
+    padding-bottom: 1em;
+}
+
+.single-product #product-price {
+    padding-bottom: 1em;
+}
+
 .single-product #product-details {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.single-product-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.single-product-buttons #back-button {
+    margin-top: 1em;
 }
 
 /* Cart Page Styles */
@@ -572,6 +600,10 @@ footer p a:hover {
         align-self: center;
     }
 
+    #product-details img {
+        padding-bottom: 0;
+    }
+
 }
 
 @media (width >= 1392px) {
@@ -649,6 +681,15 @@ footer p a:hover {
     button#checkout-button {
         width: 30%;
         align-self: center;
+    }
+
+    .single-product-buttons {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .single-product-buttons #back-button {
+        margin-top: 0;
     }
 
 }

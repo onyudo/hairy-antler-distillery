@@ -31,7 +31,7 @@ Only the following types and formats of Credit Cards will pass validation: Visa,
 - MasterCard (starts with 51-55):
 
   - 5105105105105100
-    -5555555555554444
+  - 5555555555554444
 
 - American Express (starts with 34 or 37):
   - 378282246310005

@@ -75,6 +75,8 @@ button:hover {
 }
 
 #cart-count {
+    font-family: "filosofia", serif;
+    font-size: 1rem;
     margin-left: 0.2em; /* Space between the icon and the cart count */
     font-weight: bold;
 }
@@ -133,9 +135,10 @@ h1.error {
 }
 
 p.error {
+    font-size: 1.25em;
     color: #ffffff;
-    padding-top: 20px;
     text-align: left;
+    padding-top: 20px;
     padding-left: 10px;
     padding-right: 10px;
     max-width: 80%;
@@ -280,7 +283,7 @@ h1#product-name {
 }
 
 h2#product-descriptor {
-    font-size: 2rem;
+    font-size: 1.5rem;
     letter-spacing: 1.25px;
 }
 
@@ -675,7 +678,7 @@ footer p a:hover {
         justify-content: center;
         align-items: center;
         text-align: left;
-        height: 225px;
+        height: 200px;
     }
 
     p.product-price {

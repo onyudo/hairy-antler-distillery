@@ -53,7 +53,7 @@ This input field requires a sequence of numbers in the basic month/year format (
 
 ## CVC
 
-This inpur field requires any sequence of three numbers (i.e., 333) to pass validation.
+This input field requires any sequence of three numbers (i.e., 333) to pass validation.
 
 ## Age Verficiation
 

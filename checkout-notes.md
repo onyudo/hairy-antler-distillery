@@ -25,25 +25,25 @@ Only the following types and formats of Credit Cards will pass validation: Visa,
 
 - Visa (starts with 4) (13 or 16 digits):
 
-4111111111111111 
-4111111111111112 
+  - 4111111111111111 
+  - 4111111111111112 
 
 - MasterCard (starts with 51-55):
 
-5105105105105100
-5555555555554444
+  - 5105105105105100
+    -5555555555554444
 
 - American Express (starts with 34 or 37):
-378282246310005
-371449635398431
+  - 378282246310005
+  - 371449635398431
 
 - Discover (starts with 6011 or 65):
-6011111111111117
-6500000000000000
+    - 6011111111111117
+    - 6500000000000000
 
 - Diners Club (starts with 36 or 38):
 
-3600000000000000
+    - 3600000000000000
 
 These numbers are not real, but they will work with most credit card validation systems designed for testing.
 

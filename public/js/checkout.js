@@ -125,7 +125,7 @@ document.getElementById('checkout-form').addEventListener('submit', function(eve
     localStorage.removeItem('cart');
     
     // Redirect to a confirmation page or thank you page
-    alert('Thank you for your order!');
+    // alert('Thank you for your order!');
     window.location.href = 'order-confirmation.html';
 });
 

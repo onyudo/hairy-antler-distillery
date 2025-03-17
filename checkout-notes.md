@@ -8,7 +8,20 @@ These input fields are required and will take any text input but do not affect v
 
 ## State
 
-Under the best case circumstances, Kentucky distilleries can legally ship spirits to customers in only ten states: Alaska, Arizona, Connecticut, Hawaii, Kentucky, Nebraska, Nevada, New Hampshire, North Dakota and Rhode Island. Any selection that is not one of these ten states will result in the checkout form not passing validation.
+Under the best case circumstances, Kentucky distilleries can legally ship spirits to customers in only ten states:
+
+- Alaska
+- Arizona
+- Connecticut
+- Hawaii
+- Kentucky
+- Nebraska
+- Nevada
+- New Hampshire
+- North Dakota
+- Rhode Island
+  
+Any selection that is not one of these ten states will result in the checkout form not passing validation.
 
 ## Zip Code
 

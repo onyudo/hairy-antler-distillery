@@ -17,7 +17,8 @@ const validStates = /^(AK|AZ|CT|HI|KY|NE|NV|NH|ND|RI)$/;
 const zipRegex = /^[0-9]{5}$/;
 
 // Regular expression for validating a credit card number
-const cardRegex = /^4[0-9]{12}(?:[0-9]{3})?$/; // This is for Visa only, a valid number would be: 4111111111111111
+// This validates entry for the following types and format of Credit Cards: Visa, MasterCard, American Express, Discover and Diners Club
+const cardRegex = /^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|3[47][0-9]{13}|6(?:011|5[0-9]{2})[0-9]{12}|3(?:0[0-5]|[68][0-9])[0-9]{11})$/;
 
 // Regular expression for validating expiration date (MM/YY format)
 const expDateRegex = /^(0[1-9]|1[0-2])\/([0-9]{2})$/;

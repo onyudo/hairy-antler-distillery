@@ -3,7 +3,6 @@
 /* Global Styles */
 html {
     font-size: 12pt;
-
 }
 
 body {
@@ -26,6 +25,11 @@ h6 {
 
 h1 {
     font-size: 3em;
+}
+
+p {
+    font-family: "filosofia", serif;
+    font-size: 1rem;
 }
 
 button {

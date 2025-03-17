@@ -1,6 +1,11 @@
 @import url("./reset.css");
 
 /* Global Styles */
+html {
+    font-size: 12pt;
+
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -117,14 +122,16 @@ h1.error {
     color: #ffffff;
     padding-top: 2em;
     font-size: 4em;
+    letter-spacing: 2px;
 }
 
 p.error {
     color: #ffffff;
     padding-top: 20px;
-    text-align: center;
+    text-align: left;
     padding-left: 10px;
     padding-right: 10px;
+    max-width: 80%;
 }
 
 /* Homepage Styles */
@@ -205,13 +212,13 @@ nav.landing-menu a:hover {
 }
 
 h2.product-descriptor {
-    font-size: 1em;
+    font-size: 1rem;
     letter-spacing: 1.5px;
     padding-top: 1em;
 }
 
 h2.product-name {
-    font-size: 1.75em;
+    font-size: 1.75rem;
     letter-spacing: 1.25px;
 }
 
@@ -221,6 +228,14 @@ h2.product-name {
     justify-content: center;
     padding-left: 1em;
     padding-right: 1em;
+}
+
+.product-blurb {
+    padding-bottom: 1em;
+}
+
+a.view-more {
+    font-style: italic;
 }
 
 a.view-more:hover {
@@ -249,14 +264,13 @@ p.product-price {
 }
 
 h1#product-name {
-    font-size: 3em;
     letter-spacing: 1.25px;
     line-height: 1;
     padding-bottom: 0.25em;
 }
 
 h2#product-descriptor {
-    font-size: 1.5em;
+    font-size: 2rem;
     letter-spacing: 1.25px;
 }
 
@@ -690,6 +704,10 @@ footer p a:hover {
 
     .single-product-buttons #back-button {
         margin-top: 0;
+    }
+
+    p.error {
+        max-width: 50%;
     }
 
 }

@@ -385,14 +385,14 @@ main.checkout-form {
     display: flex;
     flex-direction: column;
     padding-top: 1em;
-    padding-bottom: 1em;
+    padding-bottom: 3em;
 }
 
-#checkout-form label {
+/*#checkout-form label {
     font-family: bourbon, serif;
     font-size: 1.5em;
     letter-spacing: 1.25px;
-}
+}*/
 
 input:not([type="checkbox"]), select {
     width: 100%;
@@ -685,7 +685,7 @@ footer p a:hover {
 
     .single-product-buttons {
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 
     .single-product-buttons #back-button {

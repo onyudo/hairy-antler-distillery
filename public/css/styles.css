@@ -36,8 +36,9 @@ button {
     font-family: "industry", sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     letter-spacing: 1.25px;
+    text-transform: uppercase;
     background-color: #CE9C2B;
     border: 1px solid transparent;
     color: white;
@@ -272,8 +273,8 @@ p.product-price {
     line-height: 1.25rem;
     color: #aa182c;
     font-weight: bold;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
     text-align: left;
 }
 
@@ -299,7 +300,7 @@ p.product-price {
 h1#product-name {
     letter-spacing: 1.75px;
     line-height: 1;
-    padding-bottom: 0.25em;
+    padding-bottom: 0.5rem;
 }
 
 h2#product-descriptor {
@@ -308,11 +309,12 @@ h2#product-descriptor {
     font-style: normal;
     font-size: 0.75rem;
     letter-spacing: 1.25px;
+    padding-bottom: 1rem;
     text-transform: uppercase;
 }
 
 .single-product #product-description {
-    padding-bottom: 1em;
+    padding-bottom: 1rem;
 }
 
 .single-product #product-price {
@@ -321,7 +323,7 @@ h2#product-descriptor {
     line-height: 1.25rem;
     color: #aa182c;
     font-weight: bold;
-    padding-bottom: 1em;
+    padding-bottom: 1.5rem;
 }
 
 .single-product #product-details {
@@ -336,7 +338,7 @@ h2#product-descriptor {
 }
 
 .single-product-buttons #back-button {
-    margin-top: 1em;
+    margin-top: 1rem;
 }
 
 button#back-button {
@@ -363,6 +365,17 @@ button#back-button:hover {
 .shopping-cart h1 {
     text-align: center;
     padding-top: 1em;
+}
+
+.shopping-cart p {
+    font-family: "filosofia", serif;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    text-align: center;
+}
+
+.shopping-cart p.cart-subtotal {
+    text-align: left;
 }
 
 .cart-item {
@@ -610,6 +623,11 @@ footer p a:hover {
         padding-right: .5em;
     }
 
+    .shopping-cart #products-link {
+        width: 80%;
+        align-self: center;
+    }
+
 }
 
 @media (width >= 768px) {
@@ -679,6 +697,10 @@ footer p a:hover {
 
     #product-details img {
         padding-bottom: 0;
+    }
+
+    .shopping-cart #products-link {
+        width: 50%;
     }
 
 }
@@ -771,6 +793,10 @@ footer p a:hover {
 
     p.error {
         max-width: 50%;
+    }
+
+    .shopping-cart #products-link {
+        width: 30%;
     }
 
 }

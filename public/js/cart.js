@@ -6,7 +6,7 @@ function loadCart() {
     const cartItemsContainer = document.getElementById('cart-items');
     const cartTotalElement = document.getElementById('cart-total');
     const checkoutButton = document.getElementById('checkout-button');
-    const productsLink = document.getElementById('products-link'); // Link to all products
+    const productsLink = document.getElementById('products-link'); // Button to all products
     
     let grandTotal = 0;
 
@@ -14,7 +14,7 @@ function loadCart() {
         cartItemsContainer.innerHTML = "<p>Your cart is empty</p>";
         cartTotalElement.textContent = '0.00'; // Display $0.00 if no items
         checkoutButton.style.display = 'none'; // Hide checkout button
-        productsLink.style.display = 'block'; // Show link to all products page
+        productsLink.style.display = 'block'; // Show the button to all products page
     } else {
         cartItemsContainer.innerHTML = ''; // Clear previous content
 
@@ -49,7 +49,7 @@ function loadCart() {
         // Update the grand total displayed at the bottom
         cartTotalElement.textContent = grandTotal.toFixed(2); // Display the total with 2 decimal points
         checkoutButton.style.display = 'block'; // Show checkout button
-        productsLink.style.display = 'none'; // Hide link to all products page
+        productsLink.style.display = 'none'; // Hide button to all products page
     }
 
     // Add event listeners for increment, decrement, and delete
@@ -100,6 +100,11 @@ function handleDelete(event) {
 // Handle checkout button click
 document.getElementById('checkout-button').addEventListener('click', function() {
     window.location.href = 'checkout.html'; // Redirect to checkout page
+});
+
+// Handle products button click (link to spirits.html)
+document.getElementById('products-link').addEventListener('click', function() {
+    window.location.href = 'spirits.html'; // Redirect to spirits page
 });
 
 // Load the cart when the page loads

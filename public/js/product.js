@@ -25,14 +25,14 @@ if (!productId) {
             // Display product details
             document.getElementById('product-img').src = product.product_img;
             document.getElementById('product-img').alt = product.product_name;
-            document.getElementById('product-descriptor').textContent = product.product_descriptor;
+            document.getElementById('product-descriptor').textContent = product.product_descriptor; // Display the descriptor
             document.getElementById('product-name').textContent = product.product_name;
             document.getElementById('product-description').textContent = product.product_description;
             document.getElementById('product-price').textContent = '$' + product.product_price;
 
             // Add event listener for Add to Cart button
             document.getElementById('add-to-cart-button').addEventListener('click', function() {
-                addToCart(product);
+                addToCart(product);  // Pass the product, including the descriptor
             });
         })
         .catch(err => {
@@ -59,7 +59,8 @@ function addToCart(product) {
             name: product.product_name,
             price: product.product_price,
             img: product.product_img,
-            quantity: 1
+            quantity: 1,
+            descriptor: product.product_descriptor  // Include the descriptor here
         };
         cart.push(productToAdd);
     }

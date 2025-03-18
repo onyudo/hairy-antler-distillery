@@ -59,6 +59,7 @@ function addToCart(event) {
         name: button.getAttribute('data-name'),
         price: parseFloat(button.getAttribute('data-price')),
         img: button.getAttribute('data-img'),
+        descriptor: button.closest('.product-atts').querySelector('.product-descriptor').textContent,  // Get the descriptor
         quantity: 1
     };
 

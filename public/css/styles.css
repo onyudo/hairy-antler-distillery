@@ -37,7 +37,7 @@ button {
     font-weight: 500;
     font-style: normal;
     font-size: 0.65rem;
-    letter-spacing: 1.25px;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
     background-color: #CE9C2B;
     border: 1px solid transparent;
@@ -298,6 +298,7 @@ p.product-price {
 }
 
 h1#product-name {
+    font-size: 2.75rem;
     letter-spacing: 1.75px;
     line-height: 1;
     padding-bottom: 0.5rem;
@@ -383,8 +384,8 @@ button#back-button:hover {
     flex-direction: column;
     align-items: center;
     height: fit-content;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     border-bottom: 2px dotted #5C5954;
 }
 
@@ -392,11 +393,23 @@ button#back-button:hover {
     width: 150px;
 }
 
+.cart-item-details {
+    padding-top: 1rem;
+}
+
 .cart-item-details h3 {
-    font-size: 1.5em;
+    font-size: 2em;
     letter-spacing: 1.25px;
-    padding-bottom: 1em;
-    padding-top: 1em;
+    padding-bottom: 1rem;
+}
+
+.cart-item-details h4 {
+    font-family: "industry", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.75rem;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
 }
 
 h3.grand-total {

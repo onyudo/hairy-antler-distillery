@@ -473,6 +473,11 @@ h1.checkout {
 }
 
 #error-message {
+    font-family: "industry", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.25px;
     color: #aa182c;
     text-align: center;
     padding-bottom: 2em;
@@ -490,8 +495,44 @@ main.checkout-form {
 }
 
 #checkout-form label {
-    font-family: "filosofia", serif;
-    font-size: 1rem;
+    font-family: "industry", sans-serif;
+    font-weight: 500;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1.25px;
+}
+
+input {
+    font-family: "industry", sans-serif;
+    font-weight: 500;
+    font-size: 0.75rem;
+    padding: 0.5rem;
+    letter-spacing: 1.25px;
+}
+
+input::placeholder {
+    font-family: "industry", sans-serif;
+    font-weight: 500;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    padding: 0.5rem;
+}
+
+select {
+    font-family: "industry", sans-serif;
+    font-weight: 500;
+    font-size: 0.75rem;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    padding: 0.5rem;
+}
+
+select option {
+    font-family: "industry", sans-serif;
+    font-weight: 500;
+    font-size: 0.75rem;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
 }
 
 input:not([type="checkbox"]), select {
@@ -529,9 +570,10 @@ input.error, select.error {
 
 .checkout-total {
     font-family: "filosofia", serif;
-    font-size: 1rem;
-    line-height: 1.25rem;
-    color: #aa182c;
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    font-style: italic;
+    color: #000000;
     font-weight: bold;
     text-align: center;
     padding-top: 1em;

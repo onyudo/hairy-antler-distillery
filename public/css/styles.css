@@ -33,9 +33,11 @@ p {
 }
 
 button {
-    font-family: "filosofia", serif;
-    font-size: 1rem;
-    letter-spacing: 1px;
+    font-family: "industry", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.75rem;
+    letter-spacing: 1.25px;
     background-color: #CE9C2B;
     border: 1px solid transparent;
     color: white;
@@ -174,7 +176,7 @@ body.homepage {
 .landing-menu menu {
     display: flex;
     flex-direction: column;
-    padding: 0;
+    padding-bottom: 0.5em;
     margin: 0;
     list-style-type: none;
     max-width: 100%;
@@ -228,7 +230,7 @@ nav.landing-menu a:hover {
 
 h2.product-descriptor {
     font-family: "industry", sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     font-style: normal;
     font-size: 0.75rem;
     line-height: 1rem;
@@ -248,6 +250,7 @@ h2.product-name {
     justify-content: center;
     padding-left: 1em;
     padding-right: 1em;
+    border-left: 2px dotted #5C5954;
 }
 
 .product-blurb {
@@ -288,6 +291,11 @@ p.product-price {
     padding-bottom: 2em;
 }
 
+.single-product-atts {
+    border-left: 2px dotted #5C5954;
+    padding-left: 0.5em;
+}
+
 h1#product-name {
     letter-spacing: 1.75px;
     line-height: 1;
@@ -296,10 +304,11 @@ h1#product-name {
 
 h2#product-descriptor {
     font-family: "industry", sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     font-style: normal;
-    font-size: 1.25rem;
+    font-size: 0.75rem;
     letter-spacing: 1.25px;
+    text-transform: uppercase;
 }
 
 .single-product #product-description {
@@ -330,6 +339,18 @@ h2#product-descriptor {
     margin-top: 1em;
 }
 
+button#back-button {
+    background-color: #ffffff;
+    border: 1px solid #CE9C2B;
+    color: #CE9C2B;
+}
+
+button#back-button:hover {
+    background-color: #CE9C2B;
+    border: 1px solid transparent;
+    color: #ffffff; 
+}
+
 /* Cart Page Styles */
 .shopping-cart {
     display: flex;
@@ -351,6 +372,7 @@ h2#product-descriptor {
     height: fit-content;
     padding-top: 1em;
     padding-bottom: 1em;
+    border-bottom: 2px dotted #5C5954;
 }
 
 .cart-item-img {
@@ -359,6 +381,7 @@ h2#product-descriptor {
 
 .cart-item-details h3 {
     font-size: 1.5em;
+    letter-spacing: 1.25px;
     padding-bottom: 1em;
     padding-top: 1em;
 }
@@ -366,6 +389,8 @@ h2#product-descriptor {
 h3.grand-total {
     font-family: "filosofia", serif;
     font-size: 1rem;
+    line-height: 1.25rem;
+    color: #aa182c;
     font-weight: bold;
     text-align: center;
 }
@@ -422,7 +447,7 @@ h1.checkout {
 }
 
 #error-message {
-    color: #FF0000;
+    color: #aa182c;
     text-align: center;
     padding-bottom: 2em;
 }
@@ -453,7 +478,7 @@ input:focus, select:focus {
 }
 
 input.error, select.error {
-    outline: 2px solid #FF0000;
+    outline: 2px solid #aa182c;
 }
 
 .name-container, 
@@ -479,6 +504,8 @@ input.error, select.error {
 .checkout-total {
     font-family: "filosofia", serif;
     font-size: 1rem;
+    line-height: 1.25rem;
+    color: #aa182c;
     font-weight: bold;
     text-align: center;
     padding-top: 1em;
@@ -523,7 +550,7 @@ footer p a:hover {
     }
 
     .landing-menu menu li {
-        padding: 10px;
+        padding: 1em;
     }
 
     .main-header {
@@ -638,7 +665,6 @@ footer p a:hover {
     }
 
     .cart-item {
-        border-bottom: 2px solid #CE9C2B;
         justify-content: space-evenly;
     }
 
@@ -657,7 +683,7 @@ footer p a:hover {
 
 }
 
-@media (width >= 1392px) {
+@media (width >= 1400px) {
 
     #products-list {
         display: flex;

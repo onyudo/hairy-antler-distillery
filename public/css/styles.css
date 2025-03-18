@@ -271,8 +271,9 @@ p.product-price {
     font-family: "filosofia", serif;
     font-size: 1rem;
     line-height: 1.25rem;
-    color: #aa182c;
+    color: #000000;
     font-weight: bold;
+    font-style: italic;
     padding-top: 0.5rem;
     padding-bottom: 1rem;
     text-align: left;
@@ -322,8 +323,9 @@ h2#product-descriptor {
     font-family: "filosofia", serif;
     font-size: 1rem;
     line-height: 1.25rem;
-    color: #aa182c;
+    color: #000000;
     font-weight: bold;
+    font-style: italic;
     padding-bottom: 1.5rem;
 }
 
@@ -414,10 +416,11 @@ button#back-button:hover {
 
 h3.grand-total {
     font-family: "filosofia", serif;
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 1.25rem;
-    color: #aa182c;
+    color: #000000;
     font-weight: bold;
+    font-style: italic;
     text-align: center;
 }
 

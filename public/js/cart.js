@@ -30,7 +30,7 @@ function loadCart() {
                     <h4>${item.descriptor}</h4>  <!-- Display the descriptor here -->
                     <h3>${item.name}</h3>
                     <div class="quantity-price">
-                        <p class="cart-quantity">Quantity: 
+                        <p class="cart-quantity"> 
                             <button class="decrement" data-index="${index}">-</button> 
                             <span class="quantity">${item.quantity}</span> 
                             <button class="increment" data-index="${index}">+</button>

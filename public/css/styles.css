@@ -188,10 +188,12 @@ nav.landing-menu li {
 }
 
 nav.landing-menu a {
-    font-family: "filosofia", serif;
-    font-size: 1.25rem;
-    letter-spacing: 1.25px;
+    font-family: "industry", sans-serif;
+    font-style: normal;
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 nav.landing-menu a:hover {
@@ -225,8 +227,13 @@ nav.landing-menu a:hover {
 }
 
 h2.product-descriptor {
-    font-size: 1rem;
+    font-family: "industry", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 0.75rem;
+    line-height: 1rem;
     letter-spacing: 1.5px;
+    text-transform: uppercase;
     padding-top: 1em;
 }
 
@@ -257,6 +264,11 @@ a.view-more:hover {
 }
 
 p.product-price {
+    font-family: "filosofia", serif;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #aa182c;
+    font-weight: bold;
     padding-top: 1em;
     padding-bottom: 1em;
     text-align: left;
@@ -283,7 +295,10 @@ h1#product-name {
 }
 
 h2#product-descriptor {
-    font-size: 1.5rem;
+    font-family: "industry", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.25rem;
     letter-spacing: 1.25px;
 }
 
@@ -292,6 +307,11 @@ h2#product-descriptor {
 }
 
 .single-product #product-price {
+    font-family: "filosofia", serif;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #aa182c;
+    font-weight: bold;
     padding-bottom: 1em;
 }
 

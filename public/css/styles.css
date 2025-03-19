@@ -1,6 +1,10 @@
 @import url("./reset.css");
 
 /* Global Styles */
+::selection {
+    background: #CE9C2B;
+}
+
 html {
     font-size: 12pt;
 }

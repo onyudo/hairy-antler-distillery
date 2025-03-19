@@ -657,6 +657,37 @@ footer p a:hover {
     color: #CE9C2B;
 }
 
+/* Site Credits Page Styles */
+main.credits {
+    width: 80%;
+    padding-bottom: 3rem;
+}
+
+main.credits h1 {
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+main.credits h2 {
+    font-family: "industry", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5rem;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+
+main.credits p {
+    padding-bottom: 1rem;
+}
+
+main.credits p a:hover {
+    text-decoration: underline;
+    color: #CE9C2B;
+}
+
 /* Responsive Design */
 @media (width >= 500px) {
 
@@ -912,6 +943,10 @@ footer p a:hover {
 
     .shopping-cart #products-link {
         width: 30%;
+    }
+
+    main.credits {
+        width: 50%;
     }
 
 }

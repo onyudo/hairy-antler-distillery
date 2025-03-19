@@ -269,7 +269,7 @@ a.view-more:hover {
 
 p.product-price {
     font-family: "filosofia", serif;
-    font-size: 1rem;
+    font-size: 1.25rem;
     line-height: 1.25rem;
     color: #000000;
     font-weight: bold;
@@ -321,7 +321,7 @@ h2#product-descriptor {
 
 .single-product #product-price {
     font-family: "filosofia", serif;
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 1.25rem;
     color: #000000;
     font-weight: bold;
@@ -374,7 +374,9 @@ button#back-button:hover {
     font-family: "filosofia", serif;
     font-size: 1rem;
     line-height: 1.25rem;
+    font-weight: 600;
     text-align: center;
+    font-style: italic;
 }
 
 .shopping-cart p.cart-subtotal {

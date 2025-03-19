@@ -768,6 +768,7 @@ main.sub-page p a:hover {
     .cart-price {
         padding-left: .5em;
         padding-right: .5em;
+        padding-top: 0;
     }
 
     .shopping-cart #products-link {

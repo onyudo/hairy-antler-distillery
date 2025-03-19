@@ -372,11 +372,17 @@ button#back-button:hover {
 
 .shopping-cart p {
     font-family: "filosofia", serif;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
     font-weight: 600;
     text-align: center;
     font-style: italic;
+}
+
+.cart-quantity {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
 }
 
 .shopping-cart p.cart-subtotal {
@@ -418,8 +424,8 @@ button#back-button:hover {
 
 h3.grand-total {
     font-family: "filosofia", serif;
-    font-size: 1.5rem;
-    line-height: 1.25rem;
+    font-size: 1.75rem;
+    line-height: 3.5rem;
     color: #000000;
     font-weight: bold;
     font-style: italic;
@@ -432,8 +438,8 @@ h3.grand-total {
 }
 
 .cart-quantity span.quantity {
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
 }
 
 .cart-price {
@@ -446,19 +452,67 @@ h3.grand-total {
     flex-direction: row;
     justify-content: space-between;
     padding-top: 0.5em;
+    align-items: center;
 }
 
-button.delete, button.increment, button.decrement {
+/* Style the increment and decrement icons */
+span.increment, span.decrement {
     background-color: #ffffff;
-    border: 1px solid #CE9C2B;
     color: #CE9C2B;
-    width: 76px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
 }
 
-button.delete:hover, button.increment:hover, button.decrement:hover {
+/* Hover state for increment and decrement icons */
+span.increment:hover, span.decrement:hover {
+    background-color: #CE9C2B;
+    color: #ffffff;
+}
+
+/* Optional: Style the SVG icons to be centered */
+span.increment svg, span.decrement svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* General style for the delete button */
+button.delete {
+    background-color: #ffffff;
+    color: #CE9C2B;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Delete button hover effect */
+button.delete:hover {
     background-color: #CE9C2B;
     border: 1px solid transparent;
-    color: #ffffff; 
+    color: #ffffff;
+}
+
+/* Delete SVG icon size adjustment */
+button.delete svg {
+    width: 18px;
+    height: 18px;
+    transition: fill 0.3s;
+}
+
+/* Delete SVG icon hover effect */
+button.delete:hover svg {
+    fill: #ffffff;
 }
 
 .cart-subtotal {
@@ -649,6 +703,7 @@ footer p a:hover {
     .cvc-container  {
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
     }
 
     button#checkout-button {
@@ -661,7 +716,8 @@ footer p a:hover {
     }
 
     main.shopping-cart {
-        width: 90%;
+        width: 80%;
+        justify-content: center;
     }
 
     .cart-item-details h3 {
@@ -823,8 +879,7 @@ footer p a:hover {
     }
 
     main.shopping-cart {
-        width: 60%;
-        justify-content: center;
+        width: 50%;
     }
 
     #checkout-button {

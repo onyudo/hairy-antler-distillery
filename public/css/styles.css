@@ -657,19 +657,19 @@ footer p a:hover {
     color: #CE9C2B;
 }
 
-/* Site Credits Page Styles */
-main.credits {
+/* Site Credits, Our Story & Contact Page Styles */
+main.sub-page {
     width: 80%;
     padding-bottom: 3rem;
 }
 
-main.credits h1 {
+main.sub-page h1 {
     text-align: center;
     padding-top: 3rem;
     padding-bottom: 2rem;
 }
 
-main.credits h2 {
+main.sub-page h2 {
     font-family: "industry", sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -679,11 +679,11 @@ main.credits h2 {
     padding-bottom: 1rem;
 }
 
-main.credits p {
+main.sub-page p {
     padding-bottom: 1rem;
 }
 
-main.credits p a:hover {
+main.sub-page p a:hover {
     text-decoration: underline;
     color: #CE9C2B;
 }
@@ -945,7 +945,7 @@ main.credits p a:hover {
         width: 30%;
     }
 
-    main.credits {
+    main.sub-page {
         width: 50%;
     }
 

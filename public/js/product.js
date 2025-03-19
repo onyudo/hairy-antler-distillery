@@ -49,11 +49,19 @@ if (!productId) {
 // Function to add the product to the shopping cart
 function addToCart(product) {
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
-    const existingProductIndex = cart.findIndex(item => item.id === product.product_id);
+    
+    // Ensure both IDs are of the same type and log them to see if there's an issue
+    const productId = product.product_id.toString().trim();
+    console.log("Product ID from page:", productId);
+
+    const existingProductIndex = cart.findIndex(item => item.id.toString().trim() === productId);
+    console.log("Existing product index:", existingProductIndex);
 
     if (existingProductIndex !== -1) {
+        // Product already in cart, increase quantity
         cart[existingProductIndex].quantity += 1;
     } else {
+        // Product not in cart, add new item
         const productToAdd = {
             id: product.product_id,
             name: product.product_name,

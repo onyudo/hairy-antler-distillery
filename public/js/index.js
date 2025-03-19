@@ -64,14 +64,20 @@ function addToCart(event) {
     };
 
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
-    const existingProductIndex = cart.findIndex(item => item.id === product.id);
+
+    // Ensure the product id is consistently formatted (string type and trimmed) for comparison
+    const productId = product.id.toString().trim();
+    const existingProductIndex = cart.findIndex(item => item.id.toString().trim() === productId);
 
     if (existingProductIndex !== -1) {
+        // Product already in cart, increase quantity
         cart[existingProductIndex].quantity += 1;
     } else {
+        // Product not in cart, add new item
         cart.push(product);
     }
 
+    // Save updated cart to localStorage
     localStorage.setItem('cart', JSON.stringify(cart));
     updateCartCount();
 }

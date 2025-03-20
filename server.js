@@ -14,8 +14,7 @@ const db = sqlite('products.db');
 // CORS configuration to allow only requests from http://localhost:1776
 const corsOptions = {
     origin: 'http://localhost:1776', // Allow only this origin
-    methods: ['GET', 'POST', 'PUT', 'DELETE'], // You can specify the allowed methods here
-    allowedHeaders: ['Content-Type'], // Specify allowed headers if necessary
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
 };
 
 // Apply CORS middleware to the app with the options

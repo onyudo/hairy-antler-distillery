@@ -3,12 +3,23 @@
 const express = require("express");
 const favicon = require('express-favicon');
 const sqlite = require('better-sqlite3');
+const cors = require('cors'); // Add this line to import CORS
 const app = express();
 const path = require("path");
 const port = 1776;
 
 // Path to my SQLite database
 const db = sqlite('products.db');
+
+// CORS configuration to allow only requests from http://localhost:1776
+const corsOptions = {
+    origin: 'http://localhost:1776', // Allow only this origin
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], // You can specify the allowed methods here
+    allowedHeaders: ['Content-Type'], // Specify allowed headers if necessary
+};
+
+// Apply CORS middleware to the app with the options
+app.use(cors(corsOptions));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

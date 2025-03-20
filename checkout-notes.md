@@ -54,10 +54,6 @@ Only the following types and formats of Credit Cards will pass validation: Visa,
     - 6011111111111117
     - 6500000000000000
 
-- Diners Club (starts with 36 or 38):
-
-    - 3600000000000000
-
 These numbers are not real, but they will work with most credit card validation systems designed for testing.
 
 ## Expiration Date

@@ -34,7 +34,7 @@ A properly formated email address is required for this input field to pass valid
 ## Payment Method
 
 A properly formated sequence of numbers is required for this input field to pass validation.
-Only the following types and formats of Credit Cards will pass validation: Visa, MasterCard, American Express, Discover and Diners Club. The numbers should be entered without any dashes or spaces. Below is a list of valid input entries for testing purposes only:
+Only the following types and formats of Credit Cards will pass validation: Visa, MasterCard, American Express and Discover. The numbers should be entered without any dashes or spaces. Below is a list of valid input entries for testing purposes only:
 
 - Visa (starts with 4) (13 or 16 digits):
 

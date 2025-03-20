@@ -98,7 +98,7 @@ Hairy Antler Distillery meets the recommended requirements for a Code:You capsto
 
 #### Use a regular expression to validate user input and either prevent the invalid input or inform the user about it (in all cases prevent invalid input from being stored or saved).
 
-- Regular expressions (regex) are used to validate various user inputs during the simulated checkout process, ensuring that the data entered is in the correct format before being processed. The regex checks if the email, state, zip code, credit card number, expiration date, CVC, and age verification meet specific patterns. If any input fails validation, an error message is displayed, preventing the form submission and ensuring invalid data is not stored or saved.
+- Regular expressions (regex) are used to validate various user inputs during the simulated checkout process, ensuring that the data entered is in the correct format before being processed. The regex checks if the email, state, zip code, credit card number, expiration date, CVC, and age verification meet specific patterns. If any input fails validation, an error message is displayed and the user is prevented form submitting the form.
 - <mark>Please review the project file called **checkout-notes.md** to see important information regarding proper and improper entries to test form validation for the simulated checkout sequence.</mark>
 
 #### Create a node.js web server using a modern framework such as Express.js or Fastify.  Serve at least one route that your app uses (must serve more than just the index.html file).

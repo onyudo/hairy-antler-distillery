@@ -20,6 +20,14 @@ A key aspect of the project is the use of a custom Better-SQLite3 database to st
 
 To further enhance the site’s functionality, the project utilizes two custom REST APIs to interact with the database and provide dynamic content, including product details, product prices and descriptions.
 
+## Node.js and NPM
+
+In order to run this project locally you will need to have node.js and npm installed. Node.js version 22.14.0 and npm version 10.9.2 were used during development.
+
+To see which version of node.js you have installed you can run `node -v` and `npm -v` respectively.
+
+If you do not have node.js or npm installed (or need to update them) please visit [nodejs.org](https://nodejs.org/en) and use the installer appropriate for your computer's operating system.
+
 ## Running the Project Locally
 
 1. Clone the project repository to your local environment:
@@ -66,11 +74,19 @@ Ctrl+C
 
 ## Technologies Used
 
-The tools, technologies and frameworks used for this project are as follows: VS Code, Firefox Developers Edition browser, Git, GitHub, Node.js, NPM, Nodemon, Express.js, CORS, Better-SQLite3, Adobe Web Fonts and Postman.
+The tools, technologies and frameworks used for this project are as follows: VS Code, Firefox Developers Edition browser, Git, GitHub, Node.js, NPM, Nodemon, Express.js, CORS, Better-SQLite3, Adobe Web Fonts and Bootstrap Icons. API testing was acomplished via the Postman desktop application. Cross browser and platform testing was accomplished with LambdaTest.
 
 ## Project Features
 
 Hairy Antler Distillery meets the recommended requirements for a Code:You capstone project. Below you will find a detailed list on what requirements have been met from the Project Requirements document, as well as how it meets said requirements.
+
+#### Implement responsive design using media queries, CSS Grid, Flexbox, etc. Your application should adapt to at least two screen sizes (mobile and desktop).
+
+- This project utilized a Mobile First desgin approach and made heavy use of CSS Flexbox. It targets the following four device widths: 
+  - @media (width >= 350px)
+  - @media (width >= 500px)
+  - @media (width >= 768px)
+  - @media (width >= 1400px)
 
 #### Use arrays, object, sets, or maps to store and retrieve information that is displayed in your app.
 

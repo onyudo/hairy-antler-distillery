@@ -3,7 +3,7 @@
 const express = require("express");
 const favicon = require('express-favicon');
 const sqlite = require('better-sqlite3');
-const cors = require('cors'); // Add this line to import CORS
+const cors = require('cors');
 const app = express();
 const path = require("path");
 const port = 1776;

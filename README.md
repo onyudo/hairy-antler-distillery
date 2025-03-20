@@ -20,7 +20,7 @@ A key aspect of the project is the use of a custom Better-SQLite3 database to st
 
 To further enhance the site’s functionality, the project utilizes two custom REST APIs to interact with the database and provide dynamic content, including product details, product prices and descriptions.
 
-## Node.js and NPM
+## node.js and npm
 
 In order to run this project locally you will need to have node.js and npm installed. Node.js version 22.14.0 and npm version 10.9.2 were used during development.
 

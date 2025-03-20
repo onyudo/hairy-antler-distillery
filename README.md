@@ -24,7 +24,7 @@ To further enhance the site’s functionality, the project utilizes two custom R
 
 In order to run this project locally you will need to have node.js and npm installed. Node.js version 22.14.0 and npm version 10.9.2 were used during development.
 
-To see which version of node.js you have installed you can run `node -v` and `npm -v` respectively.
+To see which version of node.js and npm you have installed you can run `node -v` and `npm -v` respectively.
 
 If you do not have node.js or npm installed (or need to update them) please visit [nodejs.org](https://nodejs.org/en) and use the installer appropriate for your computer's operating system.
 

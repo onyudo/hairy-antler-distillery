@@ -87,7 +87,7 @@ code .
 
 - If you are not using VS Code please follow the instructions specific to your code editor for opening project folders and files.
 
-- Optional: If you are using VS Code and would like to inspect or view the Better-SQLite3 databse, you will need to install the [SQLite Explorer](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite) extension.
+- **Optional:** If you are using VS Code and would like to inspect or view the Better-SQLite3 databse, you will need to install the [SQLite Explorer](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite) extension.
 
 4. Install the packages that are necessary to run the project by using:
 

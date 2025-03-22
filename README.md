@@ -22,7 +22,7 @@ To further enhance the site’s functionality, the project utilizes two custom R
 
 ## Technologies Used
 
-The tools, technologies and frameworks used for this project are as follows: VS Code, Firefox Developers Edition browser, Git, GitHub, Node.js, NPM, Nodemon, Express.js, CORS, Better-SQLite3, Adobe Web Fonts and Bootstrap Icons. API testing was acomplished via the Postman desktop application. Cross browser and platform testing was accomplished with LambdaTest.
+The tools, technologies and frameworks used for this project are as follows: VS Code, Firefox Developers Edition browser, Git, GitHub, Node.js, NPM, Nodemon, Express.js, CORS, Better-SQLite3, Adobe Web Fonts and Bootstrap Icons. API testing was acomplished via the [Postman](https://www.postman.com) desktop application. Cross browser and platform testing was accomplished with [LambdaTest](https://www.lambdatest.com).
 
 ## Project Features
 

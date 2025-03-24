@@ -63,17 +63,6 @@ app.post('/api/checkout', (req, res) => {
 
     // Ensure that 'cart' is serialized as a JSON string
     const cartData = JSON.stringify(cart); // Convert cart array to a JSON string
-
-    
-          
-            
-    
-
-          
-          Expand Down
-    
-    
-  
     console.log('Serialized cart data:', cartData);
     const orderDate = new Date().toISOString(); // Get the current timestamp
     console.log('Order date:', orderDate);

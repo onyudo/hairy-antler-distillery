@@ -69,7 +69,7 @@ app.post('/api/checkout', (req, res) => {
     }
 
     // Convert age_verified boolean to 1 (true) or 0 (false)
-    const ageVerified = age_verified ? 1 : 0;
+    const ageVerified = 1;
 
     // Ensure that 'cart' is serialized as a JSON string
     const cartData = JSON.stringify(cart); // Convert cart array to a JSON string

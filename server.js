@@ -13,14 +13,17 @@ const corsOptions = {
     origin: 'http://localhost:1776', // Allow only this origin
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
 };
+
 // Apply CORS middleware to the app with the options
 app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 // Lost my favicon but this fixed it
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+
 // Serves the front-end content in the public directory
 app.use("", express.static(path.join(__dirname, "./public")));
+
 // API code for retrieving all products
 app.get('/api/products', (req, res) => {
     try {
@@ -31,6 +34,7 @@ app.get('/api/products', (req, res) => {
         res.status(500).json({ error: 'Failed to fetch products' });
     }
 });
+
 // API code for retrieving a single product by product_id
 app.get('/api/products/:id', (req, res) => {
     const id = parseInt(req.params.id, 10); // Convert the ID to an integer
@@ -49,6 +53,7 @@ app.get('/api/products/:id', (req, res) => {
         res.status(500).json({ error: 'Failed to fetch product' });
     }
 });
+
 // API endpoint for submitting an order from the front end
 app.post('/api/checkout', (req, res) => {
     const { name, address, city, email, payment, cart, state, zip_code, cvc, age_verified, expirationDate } = req.body;
@@ -100,6 +105,7 @@ app.post('/api/checkout', (req, res) => {
 app.use((req, res) => {
     res.status(404).sendFile(path.join(__dirname, 'public', '404.html'));
 });
+
 // Serves the whole app
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);

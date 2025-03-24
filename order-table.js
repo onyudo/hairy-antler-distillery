@@ -1,4 +1,7 @@
 "use strict";
+/*
+
+// This file was needed to add the orders table to the database
 
 const sqlite = require('better-sqlite3');
 const db = sqlite('products.db'); // Path to SQLite database file
@@ -33,3 +36,4 @@ function createOrdersTable() {
 
 // Call the function to create the table
 createOrdersTable();
+*/

@@ -1,15 +1,5 @@
 "use strict";
 
-// Update the cart count on the page if the element exists
-function updateCartCount() {
-    const cart = JSON.parse(localStorage.getItem('cart')) || [];
-    const cartCount = cart.reduce((total, product) => total + product.quantity, 0);
-    const cartCountElement = document.getElementById('cart-count');
-    if (cartCountElement) {
-        cartCountElement.innerText = cartCount;
-    }
-}
-
 // Regular expression to check if the state is valid - only certain states are allowed to ship spirits to!
 const validStates = /^(AK|AZ|CT|HI|KY|NE|NV|NH|ND|RI)$/;
 
@@ -17,7 +7,6 @@ const validStates = /^(AK|AZ|CT|HI|KY|NE|NV|NH|ND|RI)$/;
 const zipRegex = /^[0-9]{5}$/;
 
 // Regular expression for validating a credit card number
-// This validates entry for the following types and format of Credit Cards: Visa, MasterCard, American Express, Discover and Diners Club
 const cardRegex = /^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|3[47][0-9]{13}|6(?:011|5[0-9]{2})[0-9]{12}|3(?:0[0-5]|[68][0-9])[0-9]{11})$/;
 
 // Regular expression for validating expiration date (MM/YY format)
@@ -46,6 +35,18 @@ function loadCart() {
 
         // Update the total in the cart
         cartTotalElement.textContent = total.toFixed(2);
+    }
+
+    updateCartCount();
+}
+
+// Function to update cart count on the page if the element exists
+function updateCartCount() {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const cartCount = cart.reduce((total, product) => total + product.quantity, 0);
+    const cartCountElement = document.getElementById('cart-count');
+    if (cartCountElement) {
+        cartCountElement.innerText = cartCount;
     }
 }
 
@@ -113,24 +114,65 @@ document.getElementById('checkout-form').addEventListener('submit', function(eve
         return;
     }
 
+    // 8. Get the 'city' value and validate it
+    const city = document.getElementById('city').value;
+    if (!city) {
+        errorMessage.textContent = "Please enter your city.";
+        return;
+    }
+
     // If all fields pass validation, proceed with the form submission
     const name = document.getElementById('name').value;
     const address = document.getElementById('address').value;
-    const payment = document.getElementById('payment').value;
 
-    // Simulate order submission
-    console.log('Order placed:', { name, address, email, payment, cart });
+    // Prepare the order data to send to the server
+    const orderData = {
+        name: name,
+        address: address,
+        city: city,
+        email: email,
+        payment: creditCard,  // Map payment to credit_card for DB schema
+        cart: cart,
+        state: state,
+        zip_code: zipCode,
+        cvc: cvc,
+        age_verified: ageVerified,
+        expirationDate: expDate
+    };
 
-    // Clear cart after order
-    localStorage.removeItem('cart');
-    
-    // Redirect to a confirmation page or thank you page
-    // alert('Thank you for your order!');
-    window.location.href = 'order-confirmation.html';
+    // Log the order data to verify
+    console.log('Order data being sent:', orderData);  // Log data here for debugging
+
+    // Send the order data to the server
+    fetch('http://localhost:1776/api/checkout', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(orderData),
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Server response:', data); // Log server response to verify success
+
+        // Check if the server responds with a success message or an orderId
+        if (data.message === "Order placed successfully") {
+            // Clear the cart after successful submission
+            localStorage.removeItem('cart');
+        
+            // Redirect immediately to the order confirmation page
+            window.location.href = 'order-confirmation.html';
+        } else {
+            alert('There was an error processing your order. Please try again.');
+        }
+    })
+    .catch(error => {
+        console.error('Error submitting order:', error);
+        alert('There was an error processing your order. Please try again.');
+    });
 });
 
-// Load the cart and update the total when the page loads
+// Load cart and update the total when the page loads
 window.onload = function() {
     loadCart();
-    updateCartCount(); // Ensure this is called on the checkout page to update the cart count
 };

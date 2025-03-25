@@ -5,6 +5,7 @@
 /*
 
 // INSERT INTO for creating a new product in the products.db SQLite databse
+// OR for creating a new row of data in an existing table
 
 //Prep the insert statement
 

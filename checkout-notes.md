@@ -56,6 +56,8 @@ Only the following types and formats of Credit Cards will pass validation: Visa,
 
 These numbers are not real, but they will work with most credit card validation systems designed for testing.
 
+**NOTE**: The easiest way to see a credit card number not pass validation is to remove the last digit in any of the above test numbers.
+
 ## Expiration Date
 
 This input field requires a sequence of numbers in the basic month/year format (i.e, MM/YY, 02/29) to pass validation.

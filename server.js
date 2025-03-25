@@ -18,6 +18,7 @@ const corsOptions = {
 
 // Apply CORS middleware to the app with the options
 app.use(cors(corsOptions));
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 // Lost my favicon but this fixed it
@@ -91,7 +92,7 @@ app.post('/api/checkout', (req, res) => {
             zip_code,           // Zip Code
             payment,            // Credit Card
             cvc,                // CVC
-            ageVerified,        // Age Verification (1 or 0)
+            ageVerified,        // Age Verification (1 for true)
             orderDate,          // Order Date
             cartData,           // Cart Data (Serialized JSON string)
             expDate             // Expiration Date

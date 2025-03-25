@@ -2,8 +2,8 @@
 
 /*
 
-// This file was needed to add the city column to the database
-// I missed including this column when I created the database
+// This file was needed to add the city column to the orders table in the products.db database
+// I missed including this column when I originally created the table
 
 const sqlite = require('better-sqlite3');
 const db = sqlite('products.db'); // Path to SQLite database file

@@ -6,8 +6,10 @@ const cors = require('cors');
 const app = express();
 const path = require("path");
 const port = 1776;
+
 // Path to SQLite database
 const db = sqlite('products.db');
+
 // CORS configuration to allow only requests from http://localhost:1776
 const corsOptions = {
     origin: 'http://localhost:1776', // Allow only this origin
@@ -63,7 +65,7 @@ app.post('/api/checkout', (req, res) => {
         return res.status(400).json({ error: 'Invalid order data' });
     }
 
-    // Convert age_verified boolean to 1 (true) or 0 (false)
+    // Convert age_verified boolean to 1 (true)
     const ageVerified = 1;
 
     // Ensure that 'cart' is serialized as a JSON string
@@ -101,6 +103,7 @@ app.post('/api/checkout', (req, res) => {
         res.status(500).json({ error: 'Failed to place order' });
     }
 });
+
 // Route for custom 404 error should go here - This should be the last route
 app.use((req, res) => {
     res.status(404).sendFile(path.join(__dirname, 'public', '404.html'));

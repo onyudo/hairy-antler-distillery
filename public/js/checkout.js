@@ -114,16 +114,10 @@ document.getElementById('checkout-form').addEventListener('submit', function(eve
         return;
     }
 
-    // 8. Get the 'city' value and validate it
-    const city = document.getElementById('city').value;
-    if (!city) {
-        errorMessage.textContent = "Please enter your city.";
-        return;
-    }
-
     // If all fields pass validation, proceed with the form submission
     const name = document.getElementById('name').value;
     const address = document.getElementById('address').value;
+    const city = document.getElementById('city').value;
 
     // Prepare the order data to send to the server
     const orderData = {

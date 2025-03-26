@@ -57,7 +57,7 @@ Hairy Antler Distillery meets the recommended requirements for a Code:You capsto
 
 - This project uses the better-sqlite3 library to interact with an SQLite database called products.db. It stores information about various products, including details like product image paths, names, descriptions, prices, stock quantities, and their active status. The products can later be retrieved using SQL SELECT queries, typically for displaying the data through API routes in my application.
 
-#### Stretch Goal
+#### **STRETCH GOAL ACHEIVED!**
 
 - For this project, my stretch goal was to store the simulated checkout data into an orders table in my Better-SQLite3 database. The project captures user input—such as name, address, city, state, zip code, email, credit card details, and cart information—via form fields. After validating the data, it’s packaged into an object and sent to the server through a POST request to the /api/checkout API. The cart data, an array of product objects, is serialized into a JSON string and saved along with the other order details, ensuring that all checkout information is stored and can be retrieved later.
 - <mark>**IMPORTANT NOTE:** If you are using VS Code and would like to inspect or view the Better-SQLite3 databse, you will need to install the [SQLite Explorer](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite) extension. If you are not using VS Code, please see the user documentation specific to your code editor in regards to inspecting or viewing SQLite databases.</mark>

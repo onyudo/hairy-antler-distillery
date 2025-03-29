@@ -60,7 +60,7 @@ Hairy Antler Distillery meets the recommended requirements for a Code:You capsto
 #### **STRETCH GOAL ACHEIVED!**
 
 - For this project, my stretch goal was to store the simulated checkout data into an orders table in my Better-SQLite3 database. The project captures user input—such as name, address, city, state, zip code, email, credit card details, and cart information—via form fields. After validating the data, it’s packaged into an object and sent to the server through a POST request to the /api/checkout API. The cart data, an array of product objects, is serialized into a JSON string and saved along with the other order details, ensuring that all checkout information is stored and can be retrieved later.
-- <mark>**IMPORTANT NOTE:** If you are using VS Code and would like to inspect or view the Better-SQLite3 databse, you will need to install the [SQLite Explorer](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite) extension. If you are not using VS Code, please see the user documentation specific to your code editor in regards to inspecting or viewing SQLite databases.</mark>
+- <mark>**IMPORTANT NOTE:** If you are using VS Code and would like to inspect or view the Better-SQLite3 database, you will need to install the [SQLite Explorer](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite) extension. If you are not using VS Code, please see the user documentation specific to your code editor in regards to inspecting or viewing SQLite databases.</mark>
 
 ## node.js and npm
 
@@ -92,7 +92,7 @@ code .
 
 - If you are not using VS Code please follow the instructions specific to your code editor for opening project folders and files.
 
-- <mark>**IMPORTANT NOTE:** If you are using VS Code and would like to inspect or view the Better-SQLite3 databse, you will need to install the [SQLite Explorer](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite) extension. If you are not using VS Code, please see the user documentation specific to your code editor in regards to inspecting or viewing SQLite databases.</mark>
+- <mark>**IMPORTANT NOTE:** If you are using VS Code and would like to inspect or view the Better-SQLite3 database, you will need to install the [SQLite Explorer](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite) extension. If you are not using VS Code, please see the user documentation specific to your code editor in regards to inspecting or viewing SQLite databases.</mark>
 
 4. Install the packages that are necessary to run the project by using:
 
